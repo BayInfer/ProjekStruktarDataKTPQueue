@@ -20,7 +20,7 @@ public class KoneksiDatabase {
     Statement statement;
     String SQL;
     public Connection koneksiDatabase() {
-        String url = "jdbc:mysql://localhost:3306/antrianktp";
+        String url = "jdbc:mysql://localhost:3308/antrianktp";
         String username = "root";
         String password = "";
         try {
@@ -124,4 +124,5 @@ con.displayalldata();
 
      
     }
+
 }
