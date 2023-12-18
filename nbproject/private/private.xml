@@ -3,18 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/Gambar/Panggil.png</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/projectstrukturdata/App.java</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/projectstrukturdata/Queue.java</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/GUI/DaftarAntrian.java</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/GUI/Registrasi.java</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/Koneksi/KoneksiDatabase.java</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/GUI/MenuAwal.java</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/GUI/SignUp.java</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/projectstrukturdata/Node.java</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/Gambar/Registrasi.png</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/GUI/LogIn.java</file>
-            <file>file:/D:/ProjectStrukturData/ProjectStrukturData/src/Gambar/Daftar%20Antrian.png</file>
+            <file>file:/C:/Users/Aulia%20Syamsul/Documents/NetBeansProjects/ProjekStruktarDataKTPQueue/src/GUI/LogIn.java</file>
+            <file>file:/C:/Users/Aulia%20Syamsul/Documents/NetBeansProjects/ProjekStruktarDataKTPQueue/src/projectstrukturdata/Loginregister.java</file>
+            <file>file:/C:/Users/Aulia%20Syamsul/Documents/NetBeansProjects/ProjekStruktarDataKTPQueue/src/Koneksi/KoneksiDatabase.java</file>
+            <file>file:/C:/Users/Aulia%20Syamsul/Documents/NetBeansProjects/ProjekStruktarDataKTPQueue/src/GUI/MenuAwal.java</file>
+            <file>file:/C:/Users/Aulia%20Syamsul/Documents/NetBeansProjects/ProjekStruktarDataKTPQueue/src/GUI/DaftarAntrian.java</file>
+            <file>file:/C:/Users/Aulia%20Syamsul/Documents/NetBeansProjects/ProjekStruktarDataKTPQueue/src/projectstrukturdata/Queue.java</file>
+            <file>file:/C:/Users/Aulia%20Syamsul/Documents/NetBeansProjects/ProjekStruktarDataKTPQueue/src/GUI/Registrasi.java</file>
+            <file>file:/C:/Users/Aulia%20Syamsul/Documents/NetBeansProjects/ProjekStruktarDataKTPQueue/src/GUI/SignUp.java</file>
         </group>
     </open-files>
 </project-private>
