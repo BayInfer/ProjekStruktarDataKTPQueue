@@ -46,8 +46,8 @@ public class Registrasi extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        Nama1 = new javax.swing.JTextField();
-        Nama2 = new javax.swing.JTextField();
+        NIK = new javax.swing.JTextField();
+        Hari = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -105,25 +105,25 @@ public class Registrasi extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gambar/Hari Registrasi.png"))); // NOI18N
 
-        Nama1.setBackground(new java.awt.Color(0, 153, 255));
-        Nama1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Nama1.setForeground(new java.awt.Color(255, 255, 255));
-        Nama1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
-        Nama1.setCaretColor(new java.awt.Color(204, 204, 204));
-        Nama1.addActionListener(new java.awt.event.ActionListener() {
+        NIK.setBackground(new java.awt.Color(0, 153, 255));
+        NIK.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        NIK.setForeground(new java.awt.Color(255, 255, 255));
+        NIK.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        NIK.setCaretColor(new java.awt.Color(204, 204, 204));
+        NIK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Nama1ActionPerformed(evt);
+                NIKActionPerformed(evt);
             }
         });
 
-        Nama2.setBackground(new java.awt.Color(0, 153, 255));
-        Nama2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        Nama2.setForeground(new java.awt.Color(255, 255, 255));
-        Nama2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
-        Nama2.setCaretColor(new java.awt.Color(204, 204, 204));
-        Nama2.addActionListener(new java.awt.event.ActionListener() {
+        Hari.setBackground(new java.awt.Color(0, 153, 255));
+        Hari.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Hari.setForeground(new java.awt.Color(255, 255, 255));
+        Hari.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        Hari.setCaretColor(new java.awt.Color(204, 204, 204));
+        Hari.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Nama2ActionPerformed(evt);
+                HariActionPerformed(evt);
             }
         });
 
@@ -142,9 +142,9 @@ public class Registrasi extends javax.swing.JFrame {
                     .addComponent(Alamat, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel5)
-                    .addComponent(Nama1, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NIK, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6)
-                    .addComponent(Nama2, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Hari, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,11 +175,11 @@ public class Registrasi extends javax.swing.JFrame {
                         .addGap(36, 36, 36)
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Nama1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(NIK, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(31, 31, 31)
                         .addComponent(jLabel6)
                         .addGap(18, 18, 18)
-                        .addComponent(Nama2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Hari, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(80, 80, 80)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -213,12 +213,14 @@ public class Registrasi extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         con.koneksiDatabase();
-        String[] namaKolom = {"Nama", "Alamat"};
-        String[] isiTabel = {Nama.getText(), Alamat.getText()};
+        String[] namaKolom = {"Nama", "Alamat","NIK","Day"};
+        String[] isiTabel = {Nama.getText(), Alamat.getText(),NIK.getText(),Hari.getText()};
         con.queryInsert("antrian", namaKolom, isiTabel);
         antrian.cetak();
         Nama.setText("");
         Alamat.setText("");
+        NIK.setText("");
+        Hari.setText("");
         con.displayalldata();
         JOptionPane.showMessageDialog(null, "Selanat Anda telah Berhasil Registrasi");
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -241,13 +243,13 @@ public class Registrasi extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void Nama1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nama1ActionPerformed
+    private void NIKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NIKActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Nama1ActionPerformed
+    }//GEN-LAST:event_NIKActionPerformed
 
-    private void Nama2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nama2ActionPerformed
+    private void HariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HariActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Nama2ActionPerformed
+    }//GEN-LAST:event_HariActionPerformed
 
     /**
      * @param args the command line arguments
@@ -288,9 +290,9 @@ public class Registrasi extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Alamat;
+    private javax.swing.JTextField Hari;
+    private javax.swing.JTextField NIK;
     private javax.swing.JTextField Nama;
-    private javax.swing.JTextField Nama1;
-    private javax.swing.JTextField Nama2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
